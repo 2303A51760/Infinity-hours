@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color:#333;
+    color: white;
+    padding: 15px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navbar .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    background-color:aqua;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    padding: 12px 30px;
+    background-color: #333;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: aqua;
+}
+
+/* Watches Section */
+.watches-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.watches-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.col {
+    flex: 1;
+    max-width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.watch-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.watch-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.watch-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ddd;
+}
+
+.watch-card h3 {
+    margin: 20px 0;
+    font-size: 1.5em;
+}
+
+.watch-card p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.watch-card .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.watch-card .btn:hover {
+    background-color: aqua;
+}
+
+/* Details Section */
+.details-section {
+    display: none;
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.details-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.details-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.details-section .btn {
+    padding: 12px 30px;
+    background-color: #333;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.details-section .btn:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .row {
+        justify-content: space-between;
+    }
+
+    .col {
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.1em;
+    }
+
+    .watches-section h2 {
+        font-size: 2em;
+    }
+
+    .col {
+        max-width: 100%;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .logo {
+        font-size: 1.5em;
+    }
+
+    .navbar .nav-links {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+}

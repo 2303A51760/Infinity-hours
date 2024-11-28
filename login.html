@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Infinite Hours</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="satwik.css">
+    <style>
+        /* Inline CSS for background color */
+        .login-section {
+            padding: 50px;
+            background-color: #ff7e5f; 
+            color: #ffffff; 
+            text-align: center;
+        }
+
+        .login-section h2 {
+            margin-bottom: 20px;
+            color: #ffffff; 
+        }
+
+        form {
+            max-width: 500px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #ffffff; 
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+
+        p {
+            color: #ffffff; 
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Login Section -->
+    <section id="login" class="login-section">
+        <div class="container">
+            <h2>Login to Your Account</h2>
+            <form action="login_process.php" method="POST">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit" class="btn">Login</button>
+            </form>
+            <p>Don't have an account? <a href="signup.html" style="color: #ffffff; text-decoration: underline;">Sign up here</a>.</p>
+        </div>
+    </section>
+
+</body>
+</html>

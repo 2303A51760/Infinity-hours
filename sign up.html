@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Infinite Hours</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="satwik.css">
+    <style>
+        /* Inline CSS for background color */
+        .signup-section {
+            padding: 50px;
+            background-color: #ff7e5f; 
+            color: #ffffff; 
+            text-align: center;
+        }
+
+        .signup-section h2 {
+            margin-bottom: 20px;
+            color: #ffffff; 
+        }
+
+        form {
+            max-width: 500px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #ffffff; 
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+
+        p {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Signup Section -->
+    <section id="signup" class="signup-section">
+        <div class="container">
+            <h2>Create a New Account</h2>
+            <form action="signup_process.php" method="POST">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="login.html" style="color: #ffffff; text-decoration: underline;">Login here</a>.</p>
+        </div>
+    </section>
+
+</body>
+</html>
